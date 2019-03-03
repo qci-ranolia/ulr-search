@@ -1,6 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule, HttpEventType,  HttpClient,  HttpRequest } from '@angular/common/http';
+
+
+
 
 // entry point and the router outlet is defined in below component
 import { AppComponent } from './app.component';
@@ -18,6 +22,9 @@ import { CertificatesComponent } from './main/certificates/certificates.componen
 import { UploadComponent } from './main/upload/upload.component'
 import { LocComponent } from './main/loc/loc.component'
 
+import { ProjectService } from './service/project.service'
+import { ApiService } from './service/api.service'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,9 +37,13 @@ import { LocComponent } from './main/loc/loc.component'
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(routes, { useHash: true }),
   ],
-  providers: [],
+  providers: [
+    ApiService,
+    ProjectService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

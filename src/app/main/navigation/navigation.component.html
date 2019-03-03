@@ -1,8 +1,44 @@
-<ol>
-  <li routerLink="/home" routerLinkActive="active">Home</li>
-  <li routerLink="/dashboard" routerLinkActive="active">Dashboard</li>
-  <li routerLink="/certificates" routerLinkActive="active">Certificates from NABL</li>
-  <li routerLink="/upload" routerLinkActive="active">Upload Test Reports</li>
-  <li routerLink="/loc" routerLinkActive="active">List Of Certificates</li>
-</ol>
-<router-outlet></router-outlet>
+<nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+  <a class="navbar-brand mr-1" href="index.html">QCI</a>
+  <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-secondary" type="button">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </form>
+</nav>
+<div id="wrapper">
+  <div id="content-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-2 qci-nav" style="background:rgba(50, 140, 200, 0.9)">
+            <!-- Sidebar -->
+          <ul class="sidebar navbar-nav">
+            <li class="nav-item" routerLink="/home" routerLinkActive="active"><a class="nav-link" href="javascript:void(0)"><span>Home</span></a></li>
+            <li class="nav-item" routerLink="/dashboard" routerLinkActive="active"><a class="nav-link" href="javascript:void(0)"><span>Dashboard</span></a></li>
+            <li class="nav-item" routerLink="/certificates" routerLinkActive="active"><a class="nav-link" href="javascript:void(0)"><span>Certificates from NABL</span></a></li>
+            <li class="nav-item" routerLink="/upload" routerLinkActive="active"><a class="nav-link" href="javascript:void(0)"><span>Upload Test Report</span></a></li>
+            <li class="nav-item" routerLink="/loc" routerLinkActive="active"><a class="nav-link" href="javascript:void(0)"><span>List Of Certificates</span></a></li>
+          </ul>
+        </div>
+        <div class="card col-lg-10 home">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+    <!-- DataTables Example -->
+  </div>
+  <!-- /.container-fluid -->
+  <!-- Sticky Footer -->
+  <footer class="sticky-footer">
+    <div class="container my-auto">
+      <div class="copyright text-center my-auto">
+        <span>Copyright © QCI 2019</span>
+      </div>
+    </div>
+  </footer>
+</div>

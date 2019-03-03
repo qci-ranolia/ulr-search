@@ -1,3 +1,21 @@
-<p>
-  loc works!
-</p>
+<div class="card-body">
+  <div class="table-responsive">
+    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Sr No.</th>
+          <th *ngFor="let head of table.header; let i = index">{{head}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of table.rows; let j = index">
+          <td>{{j+1}}</td>         
+          <td>{{row.ulr}}</td>
+          <td>{{row.filename}}</td>
+          <td>{{row.issuedate}}</td>
+          <td>{{row.expire}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

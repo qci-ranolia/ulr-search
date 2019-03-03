@@ -1,19 +1,17 @@
 {
-    "posts": [
-    {
-        "id": 1,
-        "title": "json-server",
-        "author": "typicode"
-    }
-    ],
-    "comments": [
-    {
-        "id": 1,
-        "body": "some comment",
-        "postId": 1
-    }
-    ],
-    "profile": {
-        "name": "typicode"
-    }
-}
+    "header": ["ULR", "Filename", "Issuedate", "Expire"],
+    "rows": [
+      {
+        "ulr": "ULR20190303000X1234",
+        "filename": "some.pdf",
+        "issuedate": "17/01/19",
+        "expire": "17/03/19"
+      },
+      {
+        "ulr": "ULR20190303000X1234",
+        "filename": "some.pdf",
+        "issuedate": "17/01/19",
+        "expire": "17/03/19"
+      }
+    ]
+  }

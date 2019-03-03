@@ -1,1 +1,70 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+.navbar-nav .nav-link {
+    color: #fff;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-weight: 600;
+  }
+  .qci-nav {
+    padding: 0;
+  }
+  .card.col {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .qci-nav + .card.col-lg-10 {
+    min-height: 600px;
+  }
+  
+  .home {
+    padding-top: 15px;
+  }
+  .graf {
+    margin-top: 15px;
+  }
+  .navbar-brand img {
+    height: 60px;
+  }
+  .bg-dark {
+    background-color: rgba(50, 140, 200, 0.9) !important;
+    box-shadow: 0 0 10px 10px rgba(20, 23, 28, 0.1),
+      0 3px 1px 0 rgba(20, 23, 28, 0.1);
+    -o-box-shadow: 0 0 10px 10px rgba(20, 23, 28, 0.1),
+      0 3px 1px 0 rgba(20, 23, 28, 0.1);
+    -moz-box-shadow: 0 0 10px 10px rgba(20, 23, 28, 0.1),
+      0 3px 1px 0 rgba(20, 23, 28, 0.1);
+    -webkit-box-shadow: 0 0 10px 10px rgba(20, 23, 28, 0.1),
+      0 3px 1px 0 rgba(20, 23, 28, 0.1);
+  }
+  .nav-item.active {
+    background: #fff;
+  }
+  .nav-item.active .nav-link {
+    color: #000;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  .m-2 {
+    margin: 0 0.5rem !important;
+  }
+  .table thead th {
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.03);
+  }
+  .table tbody td {
+    font-size: 14px;
+  }
+  .table td,
+  .table th {
+    padding: 0.55rem 1.25rem;
+  }
+  .qci-nav + .card.col-lg-10 > .card-body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  // app-dashboard, app-loc, app-certificates, app-home, app-upload {
+  //   width: 83%;
+  // }
